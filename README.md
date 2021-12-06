@@ -847,6 +847,7 @@ CSS Grid Layout excels at dividing a page into major regions or defining the rel
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+
 ## Q. ***What is CSS flexbox? Write all the properties of the flexbox?***
 
 The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space.
@@ -933,6 +934,7 @@ An area of a document laid out using flexbox is called a **flex container**. To 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
+
 
 ## Q. ***When to use css grid and flexbox?***
 
@@ -1028,117 +1030,6 @@ An area of a document laid out using flexbox is called a **flex container**. To 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is CSS BEM?***
-
-The BEM (**Block Element Modifier**) methodology is a naming convention for CSS classes in order to keep CSS more maintainable by defining namespaces to solve scoping issues. A Block is a standalone component that is reusable across projects and acts as a "namespace" for sub components (Elements). Modifiers are used as flags when a Block or Element is in a certain state or is different in structure or style.
-
-```css
-/* block component */
-.block {
-}
-
-/* element */
-.block__element {
-}
-
-/* modifier */
-.block__element--modifier {
-}
-```
-
-**Example**
-
-```css
-.button {
-	display: inline-block;
-	border-radius: 3px;
-	padding: 7px 12px;
-	border: 1px solid #D5D5D5;
-	background-image: linear-gradient(#EEE, #DDD);
-	font: 700 13px/18px Helvetica, arial;
-}
-.button--state-success {
-	color: #FFF;
-	background: #569E3D linear-gradient(#79D858, #569E3D) repeat-x;
-	border-color: #4A993E;
-}
-.button--state-danger {
-	color: #900;
-}
-```
-
-```html
-<button class="button">
-	Normal button
-</button>
-<button class="button button--state-success">
-	Success button
-</button>
-<button class="button button--state-danger">
-	Danger button
-</button>
-```
-
-**Benefits**  
-
-* **Modularity**: Block styles are never dependent on other elements on a page, so you will never experience problems from cascading.
-* **Reusability**: Composing independent blocks in different ways, and reusing them intelligently, reduces the amount of CSS code that you will have to maintain.
-* **Structure**: BEM methodology gives your CSS code a solid structure that remains simple and easy to understand.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What are the benefits of using CSS sprites?*** 
-
-CSS sprites combine multiple images into one single larger image. It is a commonly-used technique for icons. 
-
-**Advantages:**
-
-* Reduce the number of ```HTTP``` requests for multiple images (only one single request is required per spritesheet). But with ```HTTP2```, loading multiple images is no longer much of an issue.
-* Advance downloading of assets that won't be downloaded until needed, such as images that only appear upon `:hover` pseudo-states. Blinking wouldn't be seen.
-
-
-* When you have multiple images/ icons, browser makes separate call to the server for each one of them. sprite is a technique to combine all/ some of them (usually similar one in terms of type of image. For example, you will put jpg in one sprite) in one image. To display the icon you set height, width and background position.
-
-**Alternatives:**
-
-* Data URIs - allow you to embed the image data directly into a stylesheet. This avoids additional HTTP requests for images, making it essentially the same thing as a sprite, without the fancy positioning.
-* Icon Fonts
-* SVGs
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is tweening in css?***
-
-The pose-to-pose option is to create a few keyframes throughout the sequence, and then fill in the gaps later. Filling in these gaps is known as **tweening**. It is the process of generating intermediate frames between two images. It gives the impression that the first image has smoothly evolved into the second one. In CSS3, Transforms (matrix, translate, rotate, scale etc.) module can be used to achieve tweening.
-
-**Example**:
-
-```css
-p {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***Explain the difference between `visibility: hidden;` and `display: none;`? What are the pros and cons of using `display:none`?***
 
@@ -1148,6 +1039,7 @@ p {
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
+
 
 ## Q. ***What is the purpose of the `z-index` and how a stacking context is formed?***
 
@@ -1198,6 +1090,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+
 ## Q. ***Exaplain CSS position Property?***
 
 <p align="center">
@@ -1220,6 +1113,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+	
 ## Q. ***What are the differences between relative and absolute in CSS?***
 
 ### **Relative Position**
@@ -1313,6 +1207,7 @@ An element with `position: absolute;` will cause it to adjust its position with 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+	
 ## Q. ***The difference between block, inline and inline-block element?***
 
 **a) Block Elements**  
@@ -1375,70 +1270,7 @@ button {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are counters in CSS3?***
-
-CSS counters let you adjust the appearance of content based on its location in a document. To use a CSS counter, it must first be initialized to a value with the `counter-reset` property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter\'s value can be increased or decreased with counter-increment. The counter\'s name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
-
-```css
-body {
-  counter-reset: section;   /* Set a counter named 'section', and its initial value is 0. */
-}
-
-h3::before {
-  counter-increment: section;   /* Increment the value of section counter by 1 */
-  content: "Section " counter(section) ": ";  /* Display the word 'Section ', the value of 
-                                                 section counter, and a colon before the content
-                                                 of each h3 */
-}
-```
-
-```html
-<h3>Introduction</h3>
-<h3>Body</h3>
-<h3>Conclusion</h3>
-```
-
-**CSS Counter Properties**
-
-|Property	        |Description  |
-|-----------------|-------------------------------------------------------------------------------|
-|content	        |Used with the ::before and ::after pseudo-elements, to insert generated content|
-|counter-increment|Increments one or more counter values|
-|counter-reset	  |Creates or resets one or more counters|
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      counter-reset: section;   /* Set a counter named 'section', and its initial value is 0. */
-    }
-
-    h3::before {
-      counter-increment: section;   /* Increment the value of section counter by 1 */
-      content: "Section " counter(section) ": ";  /* Display the word 'Section ', the value of 
-                                                 section counter, and a colon before the content
-                                                 of each h3 */
-    }   
-  </style>
-</head>
-<body>
-  <h3>Introduction</h3>
-  <h3>Body</h3>
-  <h3>Conclusion</h3>
-</body>
-</html>
-```
-
-**Live Demo**: [CSS Counters](https://learning-zone.github.io/css-interview-questions/assets/files/counters.html)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
+	
 ## Q. ***How do you specify units in the CSS? What are the different ways to do it?***
 
 There are various units in CSS to express the measurement and length. A CSS unit is used to determine the property size, which we set for an element or its content. The units in CSS are required to define the measurement such as margin: 20px; in which the px (or pixel) is the CSS unit. They are used to set margin, padding, lengths, and so on.
@@ -1519,6 +1351,7 @@ Relative length units specify a length relative to another length property. Rela
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+	
 ## Q. ***Which one would you prefer among px, em % or pt and why?***
 
 * ```px``` gives fine grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade, this means if parent font-size is 20px and child 16px. child would be 16px.
@@ -1533,6 +1366,7 @@ Relative length units specify a length relative to another length property. Rela
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+	
 ## Q. ***What is pseudo element? What is pseudo class?***
 
 **1. Pseudo Element**: A CSS pseudo-element is used to style specified parts of an element.
@@ -1551,7 +1385,6 @@ For example, it can be used to:
 | 03. |::first-letter	|p::first-letter	|Selects the first letter of each <p> element|
 | 04. |::first-line	  |p::first-line	  |Selects the first line of each <p> element|
 | 05. |::selection	  |p::selection	    |Selects the portion of an element that is selected by a user|
-
 
 **2. Pseudo-classes**: A pseudo-class is used to define a special state of an element.
 
@@ -1603,6 +1436,7 @@ For example, it can be used to:
 
 ## Q. ***Explain the CSS “box model” and the layout components that it consists of?***
 
+	
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
 * **Content**: The content of the box, where text and images appear
@@ -1655,71 +1489,7 @@ The size of the box itself is calculated like this:
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
-
-## Q. ***How you would tell the browser in CSS to render your layout in different box models?***
-
-The **box-sizing** property allows us to include the padding and border in an element\'s total width and height. If you set `box-sizing: border-box;` on an element, padding and border are included in the width and height
-
-**Syntax**
-
-```css
-box-sizing: content-box|border-box|initial|inherit;
-```
-
-### **Property Values**
-
-|Value       |Description                              |
-|------------|-----------------------------------------|
-|content-box |Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included|
-|border-box	 |The width and height properties (and min/max properties) includes content, padding and border|
-|initial	   |Sets this property to its default value. Read about initial|
-|inherit	   |Inherits this property from its parent element. Read about inherit|
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>The box-sizing Property</title>
-  <style>
-    .content-box {
-        box-sizing: content-box;
-        width: 300px;
-        height: 100px;
-        padding: 30px;
-        border: 10px solid rgb(0, 89, 255);
-    }
-
-    .border-box {
-        box-sizing: border-box;
-        width: 300px;
-        height: 100px;
-        padding: 30px;
-        border: 10px solid rgb(255, 102, 0);
-    }
-  </style>
-</head>
-<body>
-    <h2>The box-sizing Property</h2>
-    <p>Defines how the width and height of an element are calculated: should they include padding 
-      and borders, or not.</p>
-
-    <h3>1. box-sizing: content-box (default):</h3>
-    <p>Width and height only apply to the content of the element:</p>
-    <div class="content-box">This div has a width of 300px. But the full width is 300px + 20px 
-      (left and right border) + 60px (left and right padding) = 380px!</div>
-
-    <h3>2. box-sizing: border-box:</h3>
-    <p>Width and height apply to all parts of the element: content, padding and borders:</p>
-    <div class="border-box">Here, the full width is 300px</div>
-</body>
-</html>
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
+	
 
 ## Q. ***What is the difference between border-box and content-box?***
 
@@ -1734,41 +1504,7 @@ box-sizing: content-box|border-box|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain the meaning of each of these CSS units for expressing length?***
-
-* ```cm``` centimeters
-* ```em``` elements (i.e., relative to the font-size of the element; e.g., 2 em means 2 times the current font size)
-* ```in``` inches
-* ```mm``` millimeters
-* ```pc``` picas (1 pc = 12 pt = 1/6th of an inch)
-* ```pt``` points (1 pt = 1/72nd of an inch)
-* ```px``` pixels (1 px = 1/96th of an inch)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***In CSS3, how would you select?***
-
-* Every ```<a>``` element whose href attribute value begins with “https”.
-```css
-  a[href^="https"]
-```
-    
-* Every ```<a>``` element whose href attribute value ends with “.pdf”.
-```css
-  a[href$=".pdf"]
-```
-    
-* Every ```<a>``` element whose href attribute value contains the substring “css”.
-```css
-  a[href*="css"]
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
+	
 ## Q. ***What is the purpose of the box-sizing property?***
 
 <p align="center">
@@ -1795,6 +1531,7 @@ padding: 5px;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+	
 ## Q. ***What is the difference between RGBa, HEX and HSLa?***
 
 * **RGB** (Red/Green/Blue) is a color model.
@@ -1825,142 +1562,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is CSS preprocessor?***
-
-Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets. After development, these specific files are compiled into regular CSS that any browser can understand. Pre-processor help writing reusable, easily maintainable and extensible codes in CSS. 
-
-**CSS preprocessors**
-
-  * SASS (SCSS)
-  * LESS
-  * Stylus
-  * PostCSS
-
-**Advantages:**
-
-* CSS is made more maintainable.
-* Easy to write nested selectors.
-* Variables for consistent theming. Can share theme files across different projects.
-* Mixins to generate repeated CSS.
-* Splitting your code into multiple files. CSS files can be split up too but doing so will require an HTTP request to download each CSS file.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is the difference between "resetting" and "normalizing" CSS?***
-
-**1. Resetting**: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.
-
-**Example**
-
-```css
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
-acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, 
-sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
-caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, 
-footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {  
-   margin: 0;  
-   padding: 0;  
-   border: 0;  
-   font-size: 100%;  
-   font: inherit;  
-   vertical-align: baseline; 
-}
-```
-
-**2. Normalizing**: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
-
-**Example**
-
-```css
-/* 
-  Correct the font size and margin on `h1` elements within `section`  
-  and `article` contexts in Chrome, Firefox, and Safari.
-*/
- h1 {  font-size: 2em;  margin: 0.67em 0;}
- ```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***Explain CSS Block Formatting Context?***
-
-Floats, absolutely positioned elements, block containers (such as inline-blocks, table-cells, and table-captions) that are not block boxes, and block boxes with 'overflow' other than 'visible' (except when that value has been propagated to the viewport) establish new block formatting contexts for their contents.
-
-In a block formatting context, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch)
-
-A BFC is an HTML box that satisfies at least one of the following conditions:
-
-* The value of `float` is not `none`.
-* The value of `position` is neither `static` nor `relative`.
-* The value of `display` is `table-cell`, `table-caption`, `inline-block`, `flex`, or `inline-flex`.
-* The value of `overflow` is not `visible`.
-
-In a BFC, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>CSS Block Formatting Context</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <style type="text/css">
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 40px;
-      background-color: #fff;
-      color: #444;
-      font: 1.4em Arial, sans-serif;
-    }
-
-    .outer {
-      background-color: #ccc;
-      margin: 0 0 40px 0;
-    }
-
-    p {
-      padding: 0;
-      margin: 20px 0 20px 0;
-      background-color: rgb(233, 78, 119);
-      color: #fff;
-    }
-
-    .overflow {
-      overflow: auto;
-    }
-  </style>
-  <body>
-    <h2>no BFC</h2>
-    <div class="outer">
-      <p>I am paragraph one and I have a margin top and bottom of 20px;</p>
-      <p>I am paragraph two and I have a margin top and bottom of 20px;</p>
-    </div>
-
-    <h2>With a BFC</h2>
-
-    <div class="outer overflow">
-      <p>I am paragraph one and I have a margin top and bottom of 20px;</p>
-      <p>I am paragraph two and I have a margin top and bottom of 20px;</p>
-    </div>
-  </body>
-</html>
-```
-
-**Live Demo**: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
+	
 ## Q. ***What is the float property and what float do?***
 
 The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
@@ -2034,6 +1636,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+	
 ## Q. ***Describe clear Property in css?***
 
 The clear property specifies what elements can float beside the cleared element and on which side.
@@ -2058,6 +1661,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+	
 ## Q. ***Explain the purpose of clearing floats in CSS?***
 
 The **clear** property is directly related to the float property. It specifies if an element should be next to the floated elements or if it should move below them. This property applies to both floated and non-floated elements.
@@ -2135,276 +1739,7 @@ clear: none|left|right|both|inherit|inline-start|inline-end;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is a clearfix in CSS?***
-
-A **clearfix** is a way for an element to clear its child elements automatically without any additional markup. The clearfix property is generally used in float layouts where elements are floated to be stacked horizontally.
-
-The clearfix property allows a container to wrap its floated children. Without a clearfix, a container will not wrap around its floated children and will collapse, just as if its floated children had been positioned absolutely.
-
-<p align="center">
-  <img src="assets/images/clearfix.png" alt="CSS rule" width="800px;" />
-</p>
-
-**Syntax**
-
-```css
-.clearfix {
-  properties
-}
-```
-
-**Example**
-
-```html
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>CSS Clearfix property</title>
-  <style>
-    div {
-      border: 3px solid #4CAF50;
-      padding: 5px;
-    }
-
-    .clearfix {
-      overflow: auto;
-    }
-    
-    .img {
-      float: right;
-    }
-  </style>
-</head>
-<body>
-  <div class="clearfix">
-    <img class="img" 
-         src="../images/horse.jpg" 
-         alt="Running Horse" 
-         width="250"
-         height="180">
-        Running Horse
-  </div>
-</body>
-</html>
-```
-
-**Live Demo**: [CSS Clearfix](https://learning-zone.github.io/css-interview-questions/assets/files/clearfix.html)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***Does `overflow: hidden` create a new block formatting context?***
-
-Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
-
-## Q. ***How would you approach fixing browser-specific styling issues?***
-
-* Use a separate style sheet that only loads when that specific browser is being used. This technique requires server-side rendering though.
-* Use `autoprefixer` to automatically add vendor prefixes to your code.
-* Use Reset CSS or Normalize.css.
-
-```css
-/*Example: 01*/
-.box-shadow {
-  background-color: red;
-  background-image: url(gradient-slice.png);
-  background-image: -webkit-linear-gradient(top right, #A60000, #FFFFFF); /*Chrome and Safari*/
-  background-image: -moz-linear-gradient(top right, #A60000, #FFFFFF); 	  /*Firefox*/
-  background-image: -ms-linear-gradient(top right, #A60000, #FFFFFF);     /*Internet Explorer*/
-  background-image: -o-linear-gradient(top right, #A60000, #FFFFFF);      /*Opera*/
-  background-image: linear-gradient(top right, #A60000, #FFFFFF);
-}
-
-/*Example: 02*/
-.box {
-	-moz-border-radius: 15px;    /* Firefox */
-	-webkit-border-radius: 15px; /* Safari and Chrome */
-	border-radius: 15px;
-}
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What are your favorite image replacement techniques and which do you use when?***
-
-**Technique: 01**
-
-```css
-h1#technique-one {
-  width: 250px;
-  height: 25px;
-  background-image: url(logo.gif);
-}
-h1#technique-one span {
-  display: none;
-}
-```
-
-```html
-<h1 id="technique-one">
-  <span>CSS-Tricks</span>
-</h1>
-```
-
-**Technique: 02**
-
-```css
-h1.technique-two {
-  width: 2350px; 
-  height: 75px;
-  background: url("images/header-image.jpg") top right;
-  margin: 0 0 0 -2000px;
-}
-```
-
-```html
-<h1 class="technique-two">
-  CSS-Tricks
-</h1>
-```
-
-**Technique: 03**
-
-```css
-h1.technique-three {
-  width: 350px; 
-  height: 75px;
-  background: url("images/header-image.jpg");
-  text-indent: -9999px;
-}
-```
-
-```html
-<h1 class="technique-three">
-  CSS-Tricks
-</h1>
-```
-
-**Technique: 04**
-
-```css
-h1.technique-four {
-	width: 350px; 
-  height: 75px;
-	background: url("images/header-image.jpg");
-	text-indent: -9999px;
-}
-```
-```html
-<h1 class="technique-four">
-  <a href="#">
-    <img src="images/header-image.jpg" alt="CSS-Tricks" />
-  </a>
-</h1>
-```
-
-**Technique: 05**
-
-```css
-h1.technique-five {
-	width: 350px; 
-  height: 75px;
-	background: url("images/header-image.jpg");
-}
-h1.technique-five span {
-  display: none;
-}
-```
-```html
-<h1 class="technique-five">
-  <img src="images/blank.gif" alt="CSS-Tricks" />
-  <span>CSS-Tricks</span>
-</h1>
-```
-
-**Technique: 06**
-
-```css
-h1.technique-six {
-	width: 350px;
-	padding: 75px 0 0 0;
-	height: 0;
-	background: url("images/header-image.jpg") no-repeat;
-	overflow: hidden;
-}
-```
-
-```html
-<h1 class="technique-six">
-  CSS-Tricks
-</h1>
-```
-
-**Technique: 07**
-
-```css
-h1.technique-seven {
-	width: 350px; 
-  height: 75px;
-	background: url("images/header-image.jpg") no-repeat;
-}
-h1.technique-seven span {
-  display: block;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-```
-
-```html
-<h1 class="technique-seven">
-	<span>CSS-Tricks</span>
-</h1>
-```
-
-**Technique: 08**
-
-```css
-h1.technique-eight {
-	width: 350px; 
-  height: 75px;
-	position: relative;
-}
-h1.technique-eight span {
-  background: url("images/header-image.jpg");
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-```
-
-```html
-<h1 class="technique-eight">
-  <span></span>CSS-Tricks
-</h1>
-```
-
-**Technique: 09**
-
-```css
-h1.technique-nine {
-  width: 350px; 
-  height: 75px;
-  background: url("images/header-image.jpg") no-repeat;
-  font-size: 1px;
-  color: white;
-}
-```
-
-```html
-<h1 class="technique-nine">
-  CSS-Tricks
-</h1>
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
+	
 ## Q. ***What are media queries? How could you apply css rules specific to a media?***
 
 Media queries are useful when you want to modify your site or app depending on a device\'s general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width). It uses the @media rule to include a block of CSS properties only if a certain condition is true.
@@ -2505,56 +1840,7 @@ Media queries are useful when you want to modify your site or app depending on a
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the use of `@media only screen`?***
 
-It hide style sheets from older user agents.
-
-## Q. ***Does the `screen` keyword apply to the device\'s physical screen or the browser\'s viewport?***
-
-Browser\'s Viewport
-
-## Q. ***How would you implement a web design comp that uses non-standard fonts?***
-
-Use `@font-face` and define `font-family` for different `font-weight`s.
-
-## Q. ***How a browser determines what elements match a CSS selector?***
-
-Browsers match selectors from rightmost (key selector) to left. Browsers filter out elements in the DOM according to the key selector and traverse up its parent elements to determine matches. The shorter the length of the selector chain, the faster the browser can determine if that element matches the selector.
-
-For example with this selector `p span`, browsers firstly find all the `<span>` elements and traverse up its parent all the way up to the root to find the `<p>` element. For a particular `<span>`, as soon as it finds a `<p>`, it knows that the `<span>` matches and can stop its matching.
-
-## Q. ***How can you load css resources conditionally?***
-
-**@import**:  allows to load stylesheet by using a path (uri) representing the location of the file.
-
-```css
-/* By default, include the "light" color theme for syntax highlighting */
-@import "cdn.com/atom-one-light.min.css";
-/* And if you’re in dark mode, have those rules superseded via a different stylesheet */
-@media (prefers-color-scheme: dark) {
-  @import "cdn.com/atom-one-dark.min.css";
-}
-```
-
-**matchMedia()**: Using matchMedia lets you execute blocks of JavaScript only when a certain media query condition is met. This means you can just write out the CSS when and if the query is true:
-
-```javascript
-if (window.matchMedia('screen and (min-width: 600px)')) {
-  document.write('<link rel="stylesheet" href="css/small.css">');
-}
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-	
-	
-# END HERE
-	
-	
-	
-	
 ## Q. ***What does  `* { box-sizing: border-box; }` do? What are its advantages?***
 
 * Make every element in the document include the padding and border in the element\'s inner dimensions; 
