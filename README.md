@@ -1,6 +1,5 @@
-# CSS INTERVIEW QUESTIONS : -
+# CSS INTERVIEW QUESTIONS
 
-## CSS Questions
 
 | No. | Questions |
 |----|------------------------------------|
