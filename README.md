@@ -4,8 +4,8 @@
 
 | No. | Questions |
 |----|------------------------------------|
-|01. |[What is difference between HTML and XHTML?](#1-what-is-difference-between-html-and-xhtml)|
-|02. |[What are the semantic tags available in html5?](#2-what-are-the-semantic-tags-available-in-html5)|
+|01. |[What is CSS?](#1-what-is-CSS)|
+|02. |[What is the use of css ruleset?](#2-what-is-the-use-of-css-ruleset)|
 |03. |[Why you would like to use semantic tag?](#3-why-you-would-like-to-use-semantic-tag)|
 |04. |[What does a `<DOCTYPE html>` do?](#4-what-does-a-doctype-html-do)|
 |05. |[What happens when DOCTYPE is not given?](#5-what-happens-when-doctype-is-not-given)|
@@ -20,6 +20,7 @@
 |14. |[When should you use `section`, `div` or `article`?](#14-when-should-you-use-section-div-or-article)|
 |15. |[Can a web page contain multiple `<header>` elements? What about `<footer>` elements?](#15-can-a-web-page-contain-multiple-header-elements-what-about-footer-elements)|
 |16. |[How many new form elements are introduced in html5?](#16-how-many-new-form-elements-are-introduced-in-html5)|
+
 
 
 ## 1. What is CSS?
