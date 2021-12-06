@@ -22,7 +22,7 @@
 |16. |[How many new form elements are introduced in html5?](#16-how-many-new-form-elements-are-introduced-in-html5)|
 
 
-## Q. ***What is CSS?***
+### 1. What is CSS?
 
 **CSS** stands for **Cascading Style Sheets**. CSS is used to define styles for web pages, including the design, layout and variations in display for different devices and screen sizes. CSS was intended to allow web professionals to separate the content and structure of a website\'s code from the visual design.
 
@@ -45,7 +45,8 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the use of css ruleset?***
+
+### 2. What is the use of css ruleset?
 
 CSS is a rule or set of rules that describe the formatting (change of appearance) of individual elements on a web page. The rule consists of two parts: the selector and the next declaration block. The image below shows the structure (syntax) of the rule:
 
