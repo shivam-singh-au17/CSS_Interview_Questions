@@ -5,20 +5,7 @@
 |----|------------------------------------|
 |01. |[What is CSS?](#1-what-is-CSS)|
 |02. |[What is the use of css ruleset?](#2-what-is-the-use-of-css-ruleset)|
-|03. |[Why you would like to use semantic tag?](#3-why-you-would-like-to-use-semantic-tag)|
-|04. |[What does a `<DOCTYPE html>` do?](#4-what-does-a-doctype-html-do)|
-|05. |[What happens when DOCTYPE is not given?](#5-what-happens-when-doctype-is-not-given)|
-|06. |[What is difference between `span` tag and `div` tag?](#6-what-is-difference-between-span-tag-and-div-tag)|
-|07. |[What are optional closing tag?](#7-what-are-optional-closing-tag)|
-|08. |[What is a self closing tag?](#8-what-is-a-self-closing-tag)|
-|09. |[Explain the difference between block elements and inline elements?](#9-explain-the-difference-between-block-elements-and-inline-elements)|
-|10.|[What are semantic and non-semantic elements?](#10-what-are-semantic-and-non-semantic-elements)|
-|11. |[What is the purpose of meta tags?](#11-what-is-the-purpose-of-meta-tags)|
-|12. |[What is the purpose of the `alt` attribute on images?](#12-what-is-the-purpose-of-the-alt-attribute-on-images)|
-|13. |[What is the difference between `<section>` and `<div>`?](#13-what-is-the-difference-between-section-and-div)|
-|14. |[When should you use `section`, `div` or `article`?](#14-when-should-you-use-section-div-or-article)|
-|15. |[Can a web page contain multiple `<header>` elements? What about `<footer>` elements?](#15-can-a-web-page-contain-multiple-header-elements-what-about-footer-elements)|
-|16. |[How many new form elements are introduced in html5?](#16-how-many-new-form-elements-are-introduced-in-html5)|
+
 
 
 
