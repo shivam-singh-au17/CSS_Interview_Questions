@@ -1,10 +1,10 @@
 # CSS INTERVIEW QUESTIONS
 
 
-| No. | Questions |
+<!-- | No. | Questions |
 |----|------------------------------------|
 |01. |[What is CSS?](#1-what-is-CSS)|
-|02. |[What is the use of css ruleset?](#2-what-is-the-use-of-css-ruleset)|
+|02. |[What is the use of css ruleset?](#2-what-is-the-use-of-css-ruleset)| -->
 
 
 
